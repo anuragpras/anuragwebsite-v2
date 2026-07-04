@@ -13,10 +13,10 @@ for filepath in html_files:
     with open(filepath, 'r', encoding='utf-8') as f:
         html = f.read()
     
-    html = re.sub(r'href="/css/style\.css\?v=\d+"', 'href="/css/style.css?v=5"', html)
-    html = re.sub(r'src="/js/site\.js(\?v=\d+)?"', 'src="/js/site.js?v=5"', html)
+    html = re.sub(r'href="/css/style\.css\?v=\d+"', 'href="/css/style.css?v=6"', html)
+    html = re.sub(r'src="/js/site\.js(\?v=\d+)?"', 'src="/js/site.js?v=6"', html)
     
     with open(filepath, 'w', encoding='utf-8') as f:
         f.write(html)
 
-print('Updated cache busters to v=5 for CSS and JS')
+print('Updated cache busters to v=6 for CSS and JS')
