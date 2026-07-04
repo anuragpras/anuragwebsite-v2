@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Anurag Prasad</title>
+  <meta name="description" content="Data science, ML, and software projects by Anurag Prasad.">
+  <link rel="icon" href="/icons8-circle-96.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script>(function(){var t=localStorage.getItem('ap-theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">Anurag Prasad</a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="/">About</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/gallery/">Gallery</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/resume/">Resume</a></li>
+      </ul>
+      <button id="theme-btn" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button id="menu-btn" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="wrap">
+
+    <div class="page-head">
+      <h1>Projects</h1>
+      <p>Data science, ML models, and software projects.</p>
+    </div>
+
+    <div class="proj-list">
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/High-Value-User-Propensity-Model" target="_blank" rel="noopener">High-Value User Propensity Model ↗</a></p>
+        <p class="proj-tech">Python · XGBoost · Scikit-learn · Feature Engineering</p>
+        <p class="proj-desc">Predicted newly acquired users likely to become high-value customers using signup, demographic, behavioral, and early engagement variables. Model outputs used for lifecycle targeting and CRM prioritization.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/Churn-Prediction-Model" target="_blank" rel="noopener">Churn Prediction Model ↗</a></p>
+        <p class="proj-tech">Python · Scikit-learn · XGBoost · Classification</p>
+        <p class="proj-desc">Churn-risk classifier for 30, 60, and 90-day horizons using engagement, wallet, notification, and behavioral signals to identify declining activity and flag retention risk.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/customer-recharge-prediction" target="_blank" rel="noopener">Customer Recharge Prediction ↗</a></p>
+        <p class="proj-tech">Python · Feature Engineering · Propensity Scoring · Decile Analysis</p>
+        <p class="proj-desc">Predicted recharge probability using user-level behavioral features, model evaluation, and decile-based targeting for monetization and campaign prioritization.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/first-purchase-propensity-model" target="_blank" rel="noopener">First Purchase Propensity Model ↗</a></p>
+        <p class="proj-tech">Python · Machine Learning · Customer Conversion · Growth Analytics</p>
+        <p class="proj-desc">Scoring model to identify users most likely to complete their first transaction, supporting acquisition quality analysis and conversion-focused CRM campaigns.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/future-recharge-prediction" target="_blank" rel="noopener">Future Recharge Prediction ↗</a></p>
+        <p class="proj-tech">Python · Machine Learning · Retention · Monetization Analytics</p>
+        <p class="proj-desc">Forecasted future recharge behavior to support lifecycle marketing, retention campaigns, and forward-looking revenue optimization.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/Shopify-Orders-GSheets-Automator" target="_blank" rel="noopener">Shopify Orders Sync and Automation ↗</a></p>
+        <p class="proj-tech">Google Apps Script · Shopify GraphQL · APIs · Google Sheets</p>
+        <p class="proj-desc">Shopify GraphQL pipeline to sync orders into Google Sheets with backfills, scheduled triggers, pagination handling, deduplication, and rate-limit-safe execution for automated business reporting.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/Shopify-Sessions-Automator" target="_blank" rel="noopener">Shopify Sessions Automator ↗</a></p>
+        <p class="proj-tech">Google Apps Script · ShopifyQL · Attribution Mapping · Traffic Analytics</p>
+        <p class="proj-desc">ShopifyQL session ingestion system with UTM/referrer/channel attribution, bot filtering, traffic aggregation, and Google Sheets reporting for marketing analytics.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/ecommerce-performance-dashboard-xlsx" target="_blank" rel="noopener">E-Commerce Performance Dashboard ↗</a></p>
+        <p class="proj-tech">Excel · Business Analytics · KPI Reporting · Dashboarding</p>
+        <p class="proj-desc">Excel dashboard tracking revenue, discounts, shipping, monthly goals, EOM projections, YTD performance, CAC, ROAS, AOV, conversion rate, orders, traffic, and channel performance.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/image-description-deep-learning" target="_blank" rel="noopener">Image Caption Generation using Deep Learning ↗</a></p>
+        <p class="proj-tech">TensorFlow/Keras · CNN · LSTM · Python</p>
+        <p class="proj-desc">CNN-LSTM model trained on 8,000 Flickr images for automatic caption generation; achieved BLEU-1 of 0.54 and BLEU-2 of 0.31.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/forecasting-hotel-booking-cancellations" target="_blank" rel="noopener">Forecasting Hotel Booking Cancellations ↗</a></p>
+        <p class="proj-tech">Python · Pandas · NumPy · Scikit-learn · Matplotlib · Seaborn</p>
+        <p class="proj-desc">87% accuracy using Random Forest to predict hotel booking cancellations; analyzed booking trends across 177 countries revealing seasonal dips and city hotel demand patterns.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/cafe-sales-analysis" target="_blank" rel="noopener">Cafe Sales Analysis ↗</a></p>
+        <p class="proj-tech">Power BI · MySQL · DAX</p>
+        <p class="proj-desc">Analyzed cafe sales from January to June 2023 covering weekday/weekend trends, total sales, and order quantities; built interactive Power BI dashboards by product category and store location.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/amazon-india-sales-dashboard-tableau" target="_blank" rel="noopener">Amazon India Sales Dashboard ↗</a></p>
+        <p class="proj-tech">Tableau · BI Dashboarding · Data Visualization</p>
+        <p class="proj-desc">Tableau dashboard to analyze Amazon India sales, revenue, profitability, product categories, customer trends, and regional performance.</p>
+      </div>
+
+      <div class="proj-item">
+        <p class="proj-name"><a href="https://github.com/anuragpras/Task-Manager-MERN" target="_blank" rel="noopener">Full-Stack Task Management App (MERN) ↗</a></p>
+        <p class="proj-tech">MongoDB · Express.js · React · Node.js · JavaScript</p>
+        <p class="proj-desc">MERN stack task management application with authentication, CRUD operations, task organization, and full-stack application structure.</p>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">अनुराग प्रसाद</div>
+</footer>
+
+<script src="/js/site.js"></script>
+</body>
+</html>
