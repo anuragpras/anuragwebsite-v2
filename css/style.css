@@ -1,3 +1,4 @@
+html, body { height: 100%; }
 /* ============================================================
    GLOBAL CSS — Anurag Prasad
    ============================================================ */
@@ -40,6 +41,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: var(--font);
   font-size: 16px;
   line-height: 1.7;
@@ -62,6 +66,7 @@ li { margin-bottom: 0.25rem; }
 }
 
 main {
+  flex: 1 0 auto;
   padding: 2.5rem 0 2rem;
 }
 
@@ -166,17 +171,7 @@ nav {
 }
 
 /* ---------- Footer ---------- */
-footer {
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-footer .wrap {
-  border-top: 1px solid var(--border);
-  padding: 1rem 0;
-  max-width: var(--max-w);
-  margin: 0 auto;
-}
+
 
 /* ---------- Page title ---------- */
 .page-head { margin-bottom: 2rem; }
@@ -623,3 +618,12 @@ img {
 }
 
 .post-row:first-child { border-top: 1px solid var(--border); }
+
+footer {
+  flex-shrink: 0;
+  border-top: 1px solid var(--border);
+  padding: 0.3rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
