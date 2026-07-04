@@ -495,13 +495,9 @@ nav {
   height: 100%;
   object-fit: cover;
   display: block;
-}
-.g-item img {
-  width: 100%;
-  height: auto;
-  display: block;
   transition: transform 0.28s ease;
 }
+
 .g-item:hover img { transform: scale(1.03);  }
 
 /* Lightbox */

@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.getElementById('menu-btn');
   const navLinks = document.querySelector('.nav-links');
   if (menuBtn && navLinks) {
-    menuBtn.addEventListener('click', () => {
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
       navLinks.classList.toggle('open');
       const open = navLinks.classList.contains('open');
       menuBtn.setAttribute('aria-expanded', open);
@@ -70,5 +71,11 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => navLinks.classList.remove('open'));
     });
+    // Close on click outside
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('open') && !navLinks.contains(e.target) && e.target !== menuBtn) {
+        navLinks.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', false);
+      }
+    });
   }
-});
