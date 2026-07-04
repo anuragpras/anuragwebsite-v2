@@ -45,7 +45,7 @@ body {
   line-height: 1.7;
   color: var(--text);
   background: var(--bg);
-  transition: background var(--t), color var(--t);
+  
 }
 
 img { display: block; max-width: 100%; }
@@ -253,7 +253,7 @@ footer {
   color: var(--accent);
   background: transparent;
   cursor: pointer;
-  transition: background var(--t), color var(--t);
+  
   text-decoration: none;
 }
 .btn:hover { background: var(--accent); color: #fff; }
@@ -496,9 +496,9 @@ footer {
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.28s ease, opacity 0.28s ease;
+  transition: transform 0.28s ease;
 }
-.g-item:hover img { transform: scale(1.03); opacity: 0.88; }
+.g-item:hover img { transform: scale(1.03);  }
 
 /* Lightbox */
 #lb {
