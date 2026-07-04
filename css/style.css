@@ -341,7 +341,7 @@ footer {
   font-weight: 700;
   font-size: 0.95rem;
 }
-.r-org a { border-bottom: 1px solid transparent; transition: border-color var(--t); }
+.r-org a { border-bottom: 1px solid var(--border); transition: border-color var(--t); }
 .r-org a:hover { border-color: var(--text); }
 
 .r-date {
