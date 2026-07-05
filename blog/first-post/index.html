@@ -58,5 +58,23 @@
 </footer>
 
 <script src="/js/site.js?v=8"></script>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBRvCXwMgg-bti7NCeFXqUiO3KWklsgW8c",
+    authDomain: "anu-raag.firebaseapp.com",
+    projectId: "anu-raag",
+    storageBucket: "anu-raag.firebasestorage.app",
+    messagingSenderId: "235852262265",
+    appId: "1:235852262265:web:d9924dccc453cca2451da8",
+    measurementId: "G-B5Y6T3SZL9"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
